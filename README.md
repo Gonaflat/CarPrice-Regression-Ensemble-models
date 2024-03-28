@@ -21,14 +21,14 @@ What models and evaluation were applied? Various models were developed, includin
 - Lasso Regression
    - A pipeline with a Scaler - MinMaxScaler, and model - LassoRegression was created.
    - Param Grid:
-    - Lasso_alpha : [0.1, 1.0, 10.0]
+     - Lasso_alpha : [0.1, 1.0, 10.0]
    - GridSearch
    - The evaluation methods: R2 Score, MSE (Mean Squared Error), and STD Deviation.
 - Ridge Regression
    - A pipeline with a Scaler - MinMaxScaler, and model - RidgeRegression was created.
    - Param Grid:
-    - ridge__alpha : [0.1, 1.0, 10.0],
-    - ridge__solver : ['auto', 'svd', 'cholesky', 'lsqr', 'sparse_cg', 'sag', 'saga']
+     - ridge__alpha : [0.1, 1.0, 10.0],
+     - ridge__solver : ['auto', 'svd', 'cholesky', 'lsqr', 'sparse_cg', 'sag', 'saga']
    - GridSearch
    - The evaluation methods: R2 Score, MSE (Mean Squared Error), and STD Deviation.
 - XGBoost
