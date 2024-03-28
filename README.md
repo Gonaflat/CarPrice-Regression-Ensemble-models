@@ -15,30 +15,30 @@ What was applied?
 
 What models and evaluation were applied? Various models were developed, including Linear Regression, Ridge Regression, Lasso Regression, and XGBoost. A/B testing was conducted, altering parameters such as the inclusion/exclusion of regularization and the use or non-use of BoxCox transformation for data normalization. All applicable models incorporate hyperparameter tuning (you can review the code for details).
 - Linear Regression
-   1.1 A pipeline with a Scaler - MinMaxScaler, and model - LinearRegression was created.
-   1.2 Subsequently, a cross-validation score evaluation was conducted.
-   1.3 The evaluation methods: R2 Score, MSE (Mean Squared Error), and STD Deviation.
+   - A pipeline with a Scaler - MinMaxScaler, and model - LinearRegression was created.
+   - Subsequently, a cross-validation score evaluation was conducted.
+   - The evaluation methods: R2 Score, MSE (Mean Squared Error), and STD Deviation.
 - Lasso Regression
-   2.1 A pipeline with a Scaler - MinMaxScaler, and model - LassoRegression was created.
-   2.2 Param Grid:
-    -Lasso_alpha : [0.1, 1.0, 10.0]
-   2.3 GridSearch
-   2.4 The evaluation methods: R2 Score, MSE (Mean Squared Error), and STD Deviation.
+   - A pipeline with a Scaler - MinMaxScaler, and model - LassoRegression was created.
+   - Param Grid:
+    - Lasso_alpha : [0.1, 1.0, 10.0]
+   - GridSearch
+   - The evaluation methods: R2 Score, MSE (Mean Squared Error), and STD Deviation.
 - Ridge Regression
-   3.1 A pipeline with a Scaler - MinMaxScaler, and model - RidgeRegression was created.
-   3.2 Param Grid:
+   - A pipeline with a Scaler - MinMaxScaler, and model - RidgeRegression was created.
+   - Param Grid:
     - ridge__alpha : [0.1, 1.0, 10.0],
     - ridge__solver : ['auto', 'svd', 'cholesky', 'lsqr', 'sparse_cg', 'sag', 'saga']
-   3.3 GridSearch
-   3.4 The evaluation methods: R2 Score, MSE (Mean Squared Error), and STD Deviation.
+   - GridSearch
+   - The evaluation methods: R2 Score, MSE (Mean Squared Error), and STD Deviation.
 - XGBoost
-   4.1 A pipeline with a Scaler - MinMaxScaler, and model - XGBoost was created.
-   4.2 Param Grid:
+   - A pipeline with a Scaler - MinMaxScaler, and model - XGBoost was created.
+   - Param Grid:
     - xgbreg__n_estimators: [100, 200],
     - xgbreg__max_depth: [3, 4, 5],
     - xgbreg__learning_rate: [0.01, 0.1],
     - xgbreg__subsample: [0.8, 1.0]
-   4.3 GridSearch
-   4.4 The evaluation methods: R2 Score, MSE (Mean Squared Error), and STD Deviation.
+   - GridSearch
+   - The evaluation methods: R2 Score, MSE (Mean Squared Error), and STD Deviation.
 
 A numerical evaluation of the model's statistical indicators was conducted, along with a visual assessment using a Q-Q plot (to analyze the residuals of a regression model — the differences between observed and predicted values).
