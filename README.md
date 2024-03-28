@@ -7,8 +7,8 @@ How well those variables describe the price of a car
 Goal: Build a regression model that accurately predicts car prices and performs well on new data. Quality data preprocessing for statistical analysis and corresponding data visualization are also required.
 
 What was applied?
-Initial visualization: Histograms for data distribution visualization, Box Plot for outliers visualization, Count Plot for visualizing the number of data in each feature, and scatter plots for data distribution visualization. 
-Data in 'Object' format were converted to categorical data. 
-Missing values were processed, as well as duplicates. 
-The names of incorrectly entered cars were corrected.
-A correlation analysis was conducted between features, including visual analysis on a correlation map, and the 'variance_inflation_factor' method was used to identify multicollinearity among features, as regression models are highly dependent on it
+1. Initial visualization: Histograms for data distribution visualization, Box Plot for outliers visualization, Count Plot for visualizing the number of data in each feature, and scatter plots for data distribution visualization. 
+2. Data in 'Object' format were converted to categorical data. 
+3. Missing values were processed, as well as duplicates. 
+4. The names of incorrectly entered cars were corrected.
+5. A correlation analysis was conducted between features, including visual analysis on a correlation map, and the 'variance_inflation_factor' method was used to identify multicollinearity among features, as regression models are highly dependent on it
